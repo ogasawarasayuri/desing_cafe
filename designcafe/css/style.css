@@ -1,0 +1,63 @@
+@charset "utf-8";
+
+body{
+    background-color:#FFEFD5;
+}
+.header__inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 2.7%;/*52/1920=0.02708..→2.7%..*/
+    padding-right: 7.1%;/*138/1920=0.071875..→7.1%..*/
+    position: absolute;
+    width: 100%;
+
+}
+
+.header__nav ul{
+    display: flex;
+    gap:50px;
+}
+.header__nav li{
+    color: #fff;
+    font-family: "游ゴシック体", YuGothic, "游ゴシック Medium",
+      "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+      font-weight: bold;
+}
+h1{
+    width: 227px;
+}
+
+.contents{
+    display: flex;
+    flex-direction: column;
+}
+.copy1{
+    display: flex;
+    justify-content:center;
+    font-size: larger;
+    padding-top: 103PX;
+    padding-bottom: 40px;
+}
+.copy2{
+    display: flex;
+    /* font-size: 82px; */
+    justify-content:center;
+    padding-bottom: 40px;
+
+}
+div p{
+    display: flex;
+    justify-content:center;
+    font-weight: bold;
+    line-height: 1.65;
+    padding-bottom: 85px;
+}
+
+.title_1{
+    display: flex;
+    
+}
+.img{
+    width: 100%;
+}
