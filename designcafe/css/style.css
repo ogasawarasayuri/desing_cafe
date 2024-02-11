@@ -2,6 +2,9 @@
 
 body{
     background-color:#FFEFD5;
+    font-feature-settings: "palt";
+
+    
 }
 .header__inner{
     display: flex;
@@ -41,23 +44,112 @@ h1{
 }
 .copy2{
     display: flex;
-    /* font-size: 82px; */
     justify-content:center;
+    text-align:center;
+    font-size:41px;/*82pxにするとすごく大きくなってしまいます*/
+    letter-spacing: 0.1em;
     padding-bottom: 40px;
-
 }
-div p{
-    display: flex;
-    justify-content:center;
+.contents p{
+    text-align:center;
     font-weight: bold;
     line-height: 1.65;
     padding-bottom: 85px;
 }
+.title{
+    height: 77px;
+    width: auto;
+}
 
-.title_1{
+.about_us{
     display: flex;
+    justify-content: left;
+
+}
+.about_us img{
+    width:560px;
+    height:500px;
+    border-bottom-right-radius:30%;
+    padding-right: 80px;
+    padding-left: 13%; /*244/1920=0.127..0.13*/
+}
+    
+.title_aboutus img{
+    height: 77px;
+    width: auto;
+    /* padding-bottom: 50px; */
+}
+.title_aboutus h2{
+    display: flex;
+    justify-content: left;
+    font-size: 44px;
+    font-weight: lighter;
+    padding-bottom: 30px;
+}
+.title_aboutus p{
+    display: flex;
+    font-size: 16px;
+    padding-bottom: 95px;
+}
+.title_menu{
+    max-width: 1000px;
+    margin: 0 auto;
+    
     
 }
-.img{
-    width: 100%;
+.title_menu img{
+    display: flex;
+    justify-content:center;
+   
 }
+.title_menu ul{
+    display: flex;
+    text-align: left;
+    justify-content: space-between;
+    gap: 50px;
+   
+}
+.title_menu img{
+    border-top-right-radius:40px;
+    
+}
+.items{
+color: #DD0000	;
+font-size: 38px;
+padding-left: 10px;
+margin-top: -20px;
+margin-bottom: 20px;
+}
+li p{
+    font-size: 17px;
+    padding-bottom: 75px;
+}
+
+.title_gallery{
+    margin: 0 auto;
+}
+.title_gallery img{
+    display: flex;
+    justify-content:center;
+    padding-bottom: 20px;
+}
+.gallery_photo ul{
+    display: flex;
+    flex-direction:row;
+    padding-bottom: 67px;
+}
+.title_event img{
+    padding-top: 30px;
+
+}
+.box{
+    display: flex;
+    justify-content:center;
+    background-color: #fff;
+    border-color: #4f260b;
+    width: 1000px;
+    height: 200px;
+    margin: 0 auto;
+    
+}
+
