@@ -99,10 +99,13 @@ h3{
 
 .menu__photo {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     text-align: left;
     gap: 50px;
-    
+}
+
+.menu__photo li{
+    width: 32.8%;
 }
 .menu__photo img{
    width: 100%;
