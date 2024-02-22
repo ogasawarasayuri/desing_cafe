@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
 
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -29,10 +29,26 @@
                 </ul>
             </nav>
         </div>
+        <div class="hamburger">
+            <span></span>
+        </div>
+        <nav class="header__nav-sp">
+            <ul>
+                <li><a href="#Aboutus">ABOUT US</a></li>
+                <li><a href="#Menu">MENU</a></li>
+                <li><a href="#Gallery">GALLERY</a></li>
+                <li><a href="#Event">EVENT</a></li>
+                <li><a href="#Access">ACCESS</a></li>
+            </ul>
+        </nav>
         <div class="slider">
-            <img src="./images/pc_first-100.jpg" alt="カフェ店内の様子">
+            <picture>
+                <source srcset="./images/sp_main_vs@2x-100.jpg" media="(max-width:767px)">
+                <img src="./images/pc_first-100.jpg" alt="カフェ店内の様子">
+            </picture>
+        </div>
     </header>
-    </div>
+
     <div class="contents">
         <p class="top_text">Have a happy day From a cup of coffee.</p>
         <h2 class="heading__h2">ハッピーに溢れる1日を<br>1杯のコーヒーから。</h2>
@@ -42,50 +58,70 @@
     </div>
     <!-- aboutus -->
 
-    <div class="container">
-        <main class="main">
-            <section id="Aboutus">
-                <div class="aboutus__img">
+
+    <main class="about-us">
+        <section id="Aboutus">
+            <div class="aboutus__img">
+                <picture>
+                    <source srcset="./images/about_us@2x-100.jpg" media="(max-width:767px)">
                     <img src="./images/pc_about-100.jpg" alt="コーヒーの写真">
-                </div>
+                </picture>
+            </div>
 
-                <div class="aboutus__text-area">
-                    <h3 class="heading__h3">
-                        <img src="./images/about_us@2x.png" alt="ABOUT_US">
-                    </h3>
-                    <h3>私たちが提供する<br>こだわりのコーヒー</h3>
-                    <p class="about__text">
-                        サービスを提供する上での想いや心がけていることなど、メッセージを文章で紹介します。サービスを提供する上での想いや心がけていることなど、メッセージを文章で紹介します。サービスを提供する上での想いや心がけていることなど、メッセージを文章で紹介します。サービスを提供する上での想いや心がけていることなど、メッセージを文章で紹介します。サービスを提供する上での想いや心がけていることなど、メッセージを文章で紹介します。
-                    </p>
-                </div>
-            </section>
-        </main>
-        <!-- menu -->
-        <section id="Menu">
-            <div class="menu__text-area">
+            <div class="aboutus__text-area">
                 <h3 class="heading__h3">
-                    <img src="./images/menu@2x.png" alt="MENU">
+                    <img src="./images/about_us@2x.png" alt="ABOUT_US">
                 </h3>
-                <ul class="menu__photo">
-                    <li>
-                        <img src="images/drink_sp@2x-100.jpg" alt="ドリンクメニュー">
-                        <p class="items">Drink</p>
-                        <p class="menu_text">ドリンクメニューの概要を100文字程度で紹介します。素材やこだわりなどをアピールしていきます。</p>
-                    </li>
-                    <li>
-                        <img src="images/food_sp@2x-100.jpg" alt="フードメニュー">
-                        <p class="items">Food</p>
-                        <p class="menu_text">フードメニューの概要を100文字程度で紹介します。素材やこだわりなどをアピールしていきます。</p>
-                    </li>
-                    <li>
-                        <img src="./images/cake_sp@2x-100.jpg" alt="スウィーツメニュー">
-                        <p class="items">Sweets</p>
-                        <p class="menu_text">スイーツメニューの概要を100文字程度で紹介します。素材やこだわりなどをアピールしていきます。 </p>
-                    </li>
-                </ul>
-
+                <h3>私たちが提供する<br>こだわりのコーヒー</h3>
+                <p class="about__text">
+                    サービスを提供する上での想いや心がけていることなど、メッセージを文章で紹介します。サービスを提供する上での想いや心がけていることなど、メッセージを文章で紹介します。サービスを提供する上での想いや心がけていることなど、メッセージを文章で紹介します。サービスを提供する上での想いや心がけていることなど、メッセージを文章で紹介します。サービスを提供する上での想いや心がけていることなど、メッセージを文章で紹介します。
+                </p>
+            </div>
         </section>
-    </div>
+    </main>
+    <!-- sp用 -->
+    <section class="aboutus-sp">
+        <div class="aboutus__text-area">
+            <h3 class="heading__h3">
+                <img src="./images/about_us@2x.png" alt="ABOUT_US">
+            </h3>
+        </div>
+        <div class="aboutus__img">
+            <picture>
+                <source srcset="./images/about_us@2x-100.jpg" media="(max-width:767px)">
+                <img src="./images/pc_about-100.jpg" alt="コーヒーの写真">
+            </picture>
+        </div>
+
+    </section>
+    <!-- sp用 -->
+
+    <!-- menu -->
+    <section id="Menu">
+        <div class="menu__text-area">
+            <h3 class="heading__h3">
+                <img src="./images/menu@2x.png" alt="MENU">
+            </h3>
+            <ul class="menu__photo">
+                <li>
+                    <img src="images/drink_sp@2x-100.jpg" alt="ドリンクメニュー">
+                    <p class="items">Drink</p>
+                    <p class="menu_text">ドリンクメニューの概要を100文字程度で紹介します。素材やこだわりなどをアピールしていきます。</p>
+                </li>
+                <li>
+                    <img src="images/food_sp@2x-100.jpg" alt="フードメニュー">
+                    <p class="items">Food</p>
+                    <p class="menu_text">フードメニューの概要を100文字程度で紹介します。素材やこだわりなどをアピールしていきます。</p>
+                </li>
+                <li>
+                    <img src="./images/cake_sp@2x-100.jpg" alt="スウィーツメニュー">
+                    <p class="items">Sweets</p>
+                    <p class="menu_text">スイーツメニューの概要を100文字程度で紹介します。素材やこだわりなどをアピールしていきます。 </p>
+                </li>
+            </ul>
+
+    </section>
+
     <!-- gallery -->
     <section id="Gallery">
         <div class="Gallery__photo">
@@ -135,9 +171,11 @@
 
     <!-- access -->
     <section id="Access">
-        <h3 class="heading__h3">
-            <img src="./images/access@2x.png " alt="ACCESS">
-        </h3>
+        <div class="Access__area">
+            <h3 class="heading__h3">
+                <img src="./images/access@2x.png " alt="ACCESS">
+            </h3>
+        </div>
         <div class="access__map">
             <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.2185968597137!2d139.5678567749712!3d35.69623797258235!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018ee34e5038c2d%3A0x4de155903f849205!2z5LiJ6be544Gu5qOu44K444OW44Oq576O6KGT6aSo!5e0!3m2!1sja!2sjp!4v1707721104264!5m2!1sja!2sjp"
@@ -168,7 +206,14 @@
 
 
     </footer>
-
+    <script>
+        $(function () {
+            $(".hamburger").on("click", function () {
+                $(".hamburger").toggleClass("open");
+                $(".header__nav-sp").fadeToggle();
+            });
+        });
+    </script>
 
 
 

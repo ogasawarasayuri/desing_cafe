@@ -2,24 +2,24 @@
 
 body{
     background-color:#FFEFD5;
-    font-feature-settings: "palt";
+    font-feature-settings: "palt";/*メトリクスの設定*/
 
     
 }
 .header__inner{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    display: flex;/*親要素に対して子要素を横並びにする*/
+    justify-content: space-between;/*横並びの要素を両端をそろえて均等に配置する*/
+    align-items: center;/*子要素を上下中央に揃える指定*/
     padding-left: 2.7%;/*52/1920=0.02708..→2.7%..*/
     padding-right: 7.1%;/*138/1920=0.071875..→7.1%..*/
-    position: absolute;
-    width: 100%;
+    position: absolute;/*絶対配置を指定する値*/
+    width: 100%;/*画面幅いっぱいに拡大する*/
 
 }
 
 .header__nav ul{
     display: flex;
-    gap:50px;
+    gap:50px;/*行やれるのすき間を定義*/
 }
 .header__nav li{
     color: #fff;
@@ -31,9 +31,11 @@ h1{
     width: 227px;
 }
 
+
+
 .top_text,
 .heading__h2{
-    text-align: center;
+    text-align: center;/*要素を中央寄せする値*/
 }
 .top_text{
     font-size: 30px;
@@ -43,19 +45,19 @@ h1{
 }
 .heading__h2{
     font-size: 82px;
-    letter-spacing: 0.1em;
+    letter-spacing: 0.1em;/*文字を詰める*/
     padding-bottom: 50px;
 }
 .text{
-    text-align:center;
+    text-align:center;/*要素を中央寄せする値*/
     font-size: 23px;
-    line-height: 1.65;
+    line-height: 1.65;/*文字の大きさと上下の余白を合わせた高さのこと*/
     padding-bottom: 85px;
 }
 
 #Aboutus{
     max-width: 1000px;
-    margin: 0 auto;
+    margin: 0 auto;/*ブロックレベル要素自体を中央揃えにする*/
     display: flex;
     align-items: center;
     gap:75px;
@@ -70,10 +72,10 @@ h1{
 
 .aboutus__img,
 .aboutus__text-area{
-    width: 50%;
+    width: 50%;/*画像ときテスト部分が半分なため*/
 }
 .aboutus__img img{
-    border-bottom-right-radius:75px;
+    border-bottom-right-radius:75px;/*写真の右角をカーブさせる*/
 }
 
 h3{
@@ -93,21 +95,20 @@ h3{
     
 }
 
-.menu__text-area img{
-    border-top-right-radius:40px;
-}
-
 .menu__photo {
     display: flex;
     justify-content: space-between;
     text-align: left;
+   
     gap: 50px;
 }
 
 .menu__photo li{
+    border-top-right-radius:40px;
     width: 32.8%;
 }
 .menu__photo img{
+    border-top-right-radius:40px;
    width: 100%;
   
 }
@@ -147,7 +148,7 @@ h3{
 
 .box{
     display: flex;
-    justify-content: center;
+    justify-content: center;/*横並びの要素を中央寄せで配置する指定*/
     background-color: #fff;
     border: solid 4px #4f260b;
     max-width:1000px;
@@ -158,8 +159,8 @@ h3{
 .box ul{
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    text-align:left;
+    justify-content: space-around;/*それぞれの要素に均等な余白をつける*/
+    text-align:left;/*要素を左寄せにする*/
 
 }
 .box li{
@@ -170,7 +171,7 @@ h3{
 
 }
 .Event__text{
-    text-decoration:underline;
+    text-decoration:underline;/*アンダーライン*/
 }
 
 #Access{
@@ -218,4 +219,187 @@ iframe{
     bottom:20px;
     right: 20px;
     width: 125px;
+}
+
+.header__nav-sp{
+    display: none;
+}
+
+.aboutus-sp{
+    display: none;
+}
+@media screen and (max-width:1100px){
+    .header__nav{
+        display: none;
+   
+ }
+  .hamburger{
+    width: 30px;
+    height: 30px;
+    position: absolute;/*最前面に配置*/
+    top: 10px;
+    right: 10px;
+    z-index: 9999;
+    cursor: pointer;
+ }
+  .hamburger span{
+    position:absolute;
+    width: 30px;
+    height: 2px;
+    background-color: #fff;
+    top: 50%;
+    transition: 0.3s;
+ }
+  .hamburger span::before{
+    position:absolute;
+    content: "";
+    width: 30px;
+    height: 2px;
+    background-color: #fff;
+    top: -10px;
+    transition: 0.3s;
+ }
+  .hamburger span::after{
+    position:absolute;
+    content: "";
+    width: 30px;
+    height: 2px;
+    background-color: #fff;
+    bottom: -10px;
+    transition: 0.3s;
+ }
+  .open span{
+    background-color: transparent;
+ }
+  .open span::before{
+   transform: rotate(45deg);
+   top:0;
+ }
+  .open span::after{
+    transform: rotate(-45deg);
+    bottom: 0;
+ }
+ .header__nav-sp{
+    position: absolute;
+    background-color: #00000090;/*最後を90にすると半透明になる*/
+    width: 100%;
+    height: 100vh;
+ }
+ .header__nav-sp ul{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+ }
+ .header__nav-sp li{
+   color: #fff;
+   font-family: "游ゴシック体", YuGothic, "游ゴシック Medium",
+    "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+    font-weight: bold;
+ }
+ .top_text{
+    font-size: 17px;
+ }
+ .heading__h2{
+    font-size: 38px;
+ }
+ .text{
+    font-size: 16px;
+ }
+}
+@media screen and (max-width:767px){
+     
+.top_text{
+        font-size: 17px;
+        padding-top: 39px;
+        padding-bottom: 22px;
+ }
+.heading__h2{
+        font-size: 38px;
+        padding-bottom: 33px;
+ }
+.text{
+        font-size: 16px;
+        line-height: 2.13;
+ }
+.heading__h3 img{
+        display: flex;
+        justify-content: center;
+        height: 45px;
+        width: auto;
+        margin: 0 auto;
+ }
+.about-us{
+        display: none;
+ }
+.aboutus__text-area h3{
+    display: flex;
+    justify-content: center;
+}
+.aboutus__img img{
+    width: 100%;
+}
+
+
+
+#Menu{
+        text-align: center;
+        width: 100%;
+        margin: 0 auto;
+        padding: 10px;
+       
+ }
+.menu__text-area h3{
+        padding-bottom: 19px;
+ }
+
+.menu__photo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+ }
+.menu__photo li {
+        width: 100%;
+        padding: 0 25px;
+        
+ }
+     
+.items{
+        color: #DD0000	;
+        font-size: 40px;
+        padding-left: 10px;
+        margin-top: -20px;
+        margin-bottom: 20px;
+ }
+#Event {
+        padding-bottom: 26px;
+ }
+    
+.date {
+        display: flex;
+        flex-direction: column;
+        padding-top: 15px;
+ }
+    
+    
+.Event__area h3{
+        padding-top: 20px;
+        padding-bottom: 16px;
+ }
+.Access__area h3{
+        padding-bottom: 7px;
+ }
+
+iframe{
+        height: 195px;
+        width: 100%;
+ } 
+.footer__box img,
+.footer__text ul{
+    display: flex;
+    flex-direction: column;
+   } 
 }
