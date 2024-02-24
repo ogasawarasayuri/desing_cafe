@@ -152,7 +152,6 @@ h3{
     background-color: #fff;
     border: solid 4px #4f260b;
     max-width:1000px;
-    height: 200px;
     padding: 10px;
     margin: auto;
 }
@@ -161,10 +160,13 @@ h3{
     flex-direction: column;
     justify-content: space-around;/*それぞれの要素に均等な余白をつける*/
     text-align:left;/*要素を左寄せにする*/
+   
 
 }
 .box li{
+    padding:16px ;
     font-size: 23px;
+
 }
 .date{ 
     padding-right: 40px;
@@ -192,13 +194,13 @@ iframe{
     display: flex;
     justify-content: center;
     background-color:  #ffffff;
-    padding-top: 78px;
+    padding-top: 75px;
 
 }
 
 .footer__box img{
     height: 50px;
-    width: 100%; 
+    width: auto; 
    
 }
 .footer__text ul{
@@ -228,11 +230,15 @@ iframe{
 .aboutus-sp{
     display: none;
 }
+.hidden{
+    display: none;
+ }
 @media screen and (max-width:1100px){
     .header__nav{
         display: none;
    
  }
+ 
   .hamburger{
     width: 30px;
     height: 30px;
@@ -300,14 +306,13 @@ iframe{
     font-weight: bold;
  }
  .top_text{
-    font-size: 17px;
+    font-size: 20px;
  }
  .heading__h2{
-    font-size: 38px;
+    font-size: 60px;
  }
- .text{
-    font-size: 16px;
- }
+
+ 
 }
 @media screen and (max-width:767px){
      
@@ -320,10 +325,17 @@ iframe{
         font-size: 38px;
         padding-bottom: 33px;
  }
+ 
+ 
 .text{
         font-size: 16px;
         line-height: 2.13;
+        padding-bottom: 62px;
  }
+ .hidden{
+    display: block;
+ }
+
 .heading__h3 img{
         display: flex;
         justify-content: center;
@@ -334,15 +346,31 @@ iframe{
 .about-us{
         display: none;
  }
-.aboutus__text-area h3{
-    display: flex;
-    justify-content: center;
+ .aboutus-sp{
+    display: block;
+   
 }
-.aboutus__img img{
+.aboutus__text-area,
+.aboutus__img-sp{
     width: 100%;
 }
+.heading__h3 h3{
+    padding-bottom: 15px;
+}
+.aboutus__img-sp h3{
+    font-size: 36px;
+    line-height: 1.25;
+    padding-top: 34px;
+    padding-left: 16px;
 
-
+}
+.aboutus__img-sp h3{
+    padding-left:16px;
+}
+.aboutus__img-sp p{
+    padding: 0 16px;
+    padding-bottom: 51px;
+}
 
 #Menu{
         text-align: center;
@@ -376,6 +404,7 @@ iframe{
  }
 #Event {
         padding-bottom: 26px;
+        padding: 10px;
  }
     
 .date {
@@ -389,17 +418,34 @@ iframe{
         padding-top: 20px;
         padding-bottom: 16px;
  }
+ #Access{
+    padding-top: 20px;
+ }
 .Access__area h3{
         padding-bottom: 7px;
  }
-
 iframe{
         height: 195px;
         width: 100%;
  } 
-.footer__box img,
-.footer__text ul{
-    display: flex;
+#footer{
     flex-direction: column;
-   } 
+    padding-top: 45px;
+    
+}
+.footer__box img{
+    height: 50px;
+    width: auto;
+    padding-bottom: 30px;
+    padding-left: 10px;
+    
+}
+.footer__text li{
+   padding-left: 10px;
+   font-size: 18px;
+}
+.Copyright{
+    flex-direction: column;
+    font-size: 16px;
+}
 }
