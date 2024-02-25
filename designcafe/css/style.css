@@ -350,6 +350,7 @@ iframe{
  #Aboutus,
  .aboutus-sp{
     display: block;
+    padding: 0;
 }
 
 .aboutus__text-area,
