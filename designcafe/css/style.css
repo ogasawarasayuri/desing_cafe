@@ -14,6 +14,7 @@ body{
     padding-right: 7.1%;/*138/1920=0.071875..→7.1%..*/
     position: absolute;/*絶対配置を指定する値*/
     width: 100%;/*画面幅いっぱいに拡大する*/
+    z-index: 9997;
 
 }
 
@@ -138,6 +139,7 @@ h3{
     padding-bottom: 61px;
 }
 
+
 #Event{
     width: 100%;
     text-align: center;
@@ -233,6 +235,8 @@ iframe{
 .hidden{
     display: none;
  }
+
+
 @media screen and (max-width:1100px){
     .header__nav{
     display: none;
@@ -289,6 +293,7 @@ iframe{
     background-color: #00000090;/*最後を90にすると半透明になる*/
     width: 100%;
     height: 100vh;
+    z-index: 9998;
  }
  .header__nav-sp ul{
     display: flex;
@@ -405,6 +410,16 @@ iframe{
     margin-top: -20px;
     margin-bottom: 20px;
  }
+ .Gallery__photo h3{
+    padding-bottom: 18px;
+ }
+ .Gallery__photo ul{
+    width: 100%;
+    height: auto;
+    padding-bottom: 0;
+    
+
+ }
 #Event {
     padding-bottom: 26px;
     padding: 10px;
@@ -426,11 +441,10 @@ iframe{
     white-space: nowrap;
     text-overflow: ellipsis;
     font-size: 16px;
-    /* width: 100%; */
+    
 }
 
 .Event__area h3{
-    padding-top: 20px;
     padding-bottom: 16px;
  }
  
@@ -464,4 +478,12 @@ iframe{
     flex-direction: column;
     font-size: 16px;
 }
+}
+
+.slick-dots{
+    bottom: 0;/*スライドした時に・・が画像の上に配置される*/
+}
+.slick-dots li.slick-active button:before ,/*・・を白にする*/
+.slick-dots li button:before {
+    color: #fff;
 }
