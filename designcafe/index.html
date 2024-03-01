@@ -11,13 +11,30 @@
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <link rel="stylesheet" type="text/css"
         href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/css/lightbox.css" rel="stylesheet">
+
+    <!-- lightbox2.css CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.css"
+        integrity="sha512-Woz+DqWYJ51bpVk5Fv0yES/edIMXjj3Ynda+KWTIkGoynAMHrqTcDUQltbipuiaD5ymEo9520lyoVOo9jCQOCA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"
+        integrity="sha512-Ixzuzfxv1EqafeQlTCufWfaC6ful6WFqIz4G+dWvK0beHw0NVJwvCKSgafpy5gwNqKmgUfIBraVwkKI+Cz0SEQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
     <link rel="stylesheet" href="./css/style.css">
 
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
     <!-- slick -->
     <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <script src="js/modal.js"></script>
+
+    <!-- lightbox2.js CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"
+        integrity="sha512-Ixzuzfxv1EqafeQlTCufWfaC6ful6WFqIz4G+dWvK0beHw0NVJwvCKSgafpy5gwNqKmgUfIBraVwkKI+Cz0SEQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
 
 </head>
 
@@ -150,31 +167,30 @@
             <h3 class="heading__h3">
                 <img src="./images/gallery@2x.png" atl="GALLERY">
             </h3>
-            <!-- <div class="modal js-modal">
-                <div class="modal__overlay js-modal-close"> </div>
-                <div class="modal__content"> -->
+
             <ul>
-                <li><a class="btn__link js-modal-open" href="./images/pc_gallary_05-100.jpg"><img
+                <li><a href="./images/pc_gallary_05-100.jpg" data-lightbox="group" data-title="店内写真"><img
                             src="./images/pc_gallary_05-100.jpg" alt="店内写真"> </a></li>
 
-                <li><a class="btn__link js-modal-open" href="./images/pc_gallary_04-100.jpg"><img
-                            src="./images/pc_gallary_04-100.jpg" alt="コーヒー豆の写真"></a></li>
+                <li><a href="./images/pc_gallary_04-100.jpg" data-lightbox="group" data-title="コーヒー豆"><img
+                            src="./images/pc_gallary_04-100.jpg" alt="コーヒー豆"> </a></li>
 
-                <li><a class="btn__link js-modal-open" href="./images/pc_gallary_03-100.jpg"><img
-                            src="./images/pc_gallary_03-100.jpg" alt="店内写真"></a></li>
+                <li><a href="./images/pc_gallary_03-100.jpg" data-lightbox="group" data-title="店内の様子"><img
+                            src="./images/pc_gallary_03-100.jpg" alt="店内の様子"> </a></li>
 
-                <li><a class="btn__link js-modal-open" href="./images/pc_gallary_02-100.jpg"><img
-                            src="./images/pc_gallary_02-100.jpg" alt="店内写真"></a></li>
 
-                <li><a class="btn__link js-modal-open" href="./images/pc_gallary_01-100.jpg"><img
-                            src="./images/pc_gallary_01-100.jpg" alt="コーヒーの写真"></a></li>
+                <li><a href="./images/pc_gallary_02-100.jpg" data-lightbox="group" data-title="店内写真"><img
+                            src="./images/pc_gallary_02-100.jpg" alt="店内写真"> </a></li>
 
-                <li><a class="btn__link js-modal-open" href="./images/pc_gallary_01-100.jpg"><img
-                            src="./images/pc_gallary_01-100.jpg" alt="コーヒーの写真"></a></li>
+                <li><a href="./images/pc_gallary_01-100.jpg" data-lightbox="group" data-title="コーヒーの写真"><img
+                            src="./images/pc_gallary_01-100.jpg" alt="コーヒーの写真"> </a></li>
+
+                <li><a href="./images/pc_gallary_01-100.jpg" data-lightbox="group" data-title="コーヒーの写真"><img
+                            src="./images/pc_gallary_01-100.jpg" alt="コーヒーの写真"> </a></li>
             </ul>
             <!-- </div>
         </div> -->
-        </div>
+
     </section>
 
     <!--event-->
@@ -278,18 +294,6 @@
                 ],
             });
         });
-
-
-        // $(function () {
-        //     $("js-modal-open").on("click", function () {
-        //         $("modal js-modal").fadeIn();
-        //         return false;
-        //     });
-        //     $(".js-modal-close").on("click", function () {
-        //         $(".js-modal").fadeOut();
-        //         return false;
-        //     });
-        // });
 
     </script>
 
